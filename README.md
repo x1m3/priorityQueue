@@ -22,7 +22,7 @@ This PQ version has shrinks the memory when it detects that the capacity of the 
 
 Here you can find a simple example.
 
- [priorityQueue_example_test.go]
+https://github.com/x1m3/priorityQueue/blob/master/priorityQueue_example_test.go
 
 
 
