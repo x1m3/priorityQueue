@@ -13,12 +13,12 @@ const shrinkMinCap = 1000
 const shrinkNewSizeFactor = 2
 const shrinkCapLenFactorCondition = 4
 
-type PriorityQueue struct {
+type Queue struct {
 	queue heap.Interface
 }
 
-func New() *PriorityQueue {
-	pq := &PriorityQueue{}
+func New() *Queue {
+	pq := &Queue{}
 	pq.queue = newHeapMemory(
 		shrinkMinCap,
 		shrinkNewSizeFactor,
@@ -27,11 +27,11 @@ func New() *PriorityQueue {
 	return pq
 }
 
-func (pq *PriorityQueue) Push(something Interface) {
+func (pq *Queue) Push(something Interface) {
 	heap.Push(pq.queue, something)
 }
 
-func (pq *PriorityQueue) Pop() Interface {
+func (pq *Queue) Pop() Interface {
 
 	if pq.queue.Len() <= 0 {
 		return nil
