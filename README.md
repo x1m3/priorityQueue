@@ -12,7 +12,7 @@ The advantage of this version over many others is memory contention and a clean 
 
 Other implementations never shrink the slice used in the heap, so memory used is always equal to the max value reached at any moment. This can be very dangerous for a server that is running 24x7.
 
-This PQ version has shrinks the memory when it detects that the capacity of the slice is very big for the amount of items stored at some point.
+This PQ versions hrinks the memory when it detects that the capacity of the slice is very big for the amount of items stored at some point.
 
 ## How to use it?
 
@@ -22,7 +22,7 @@ This PQ version has shrinks the memory when it detects that the capacity of the 
 
 Here you can find a simple example.
 
- [priorityQueue_example_test.go]
+https://github.com/x1m3/priorityQueue/blob/master/priorityQueue_example_test.go
 
 
 
